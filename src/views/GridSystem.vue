@@ -1,7 +1,7 @@
 <template>
-    <div>
-        GridSystem Page
-    </div>
+  <div>
+    GridSystem Page
+  </div>
 </template>
 <script>
 export default {
