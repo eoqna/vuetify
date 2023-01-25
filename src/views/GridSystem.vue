@@ -3,8 +3,8 @@
     fluid
   >
     <v-card class="pa-3">
-      <v-row dense>
-        <v-col>
+      <v-row no-gutters>
+        <v-col cols="auto">
           <v-card
             class="pa-3"
             outlined
@@ -29,8 +29,8 @@
           </v-card>
         </v-col>
       </v-row>
-      <v-row dense>
-        <v-col>
+      <v-row>
+        <v-col cols="auto">
           <v-card
             class="pa-3"
             outlined
@@ -172,6 +172,29 @@
         <v-col
           align-self="start"
         >
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-card>
+
+    <v-card class="mt-5 pa-3">
+      <v-row
+        justify="space-between"
+      >
+        <v-col cols="auto">
+          <v-card
+            class="pa-3"
+            outlined
+          >
+            Col
+          </v-card>
+        </v-col>
+        <v-col cols="auto">
           <v-card
             class="pa-3"
             outlined

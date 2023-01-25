@@ -65,6 +65,7 @@ export default {
       items: [
         { title: 'Dashboard', icon: 'mdi-view-dashboard', to: '/'},
         { title: 'GridSystem', icon: 'mdi-view-dashboard', to: '/grid-system' },
+        { title: 'GridListPage', icon: 'mdi-view-dashboard', to: '/grid-list-page' },
       ],
       right: null,
       drawer: '',
