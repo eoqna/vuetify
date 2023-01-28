@@ -12,8 +12,20 @@
 
     <v-navigation-drawer
       v-model="drawer"
+      dark
       app
+      :src="require('@/assets/sidebar.jpg')"
     >
+      <template
+        #img="props"
+      >    
+        <v-img
+          :gradient="gradient"
+          v-bind="props"
+        >
+
+        </v-img>
+      </template>
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6">
@@ -36,6 +48,8 @@
           :key="item.title"
           :to="item.to"
           link
+          active-class="primary"
+          class="py-1"
         >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -62,15 +76,20 @@ export default {
   name: 'App',
   data () {
     return {
+      drawer: '',
+      gradient: 'rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)',
       items: [
         { title: 'Dashboard', icon: 'mdi-view-dashboard', to: '/'},
-        { title: 'GridSystem', icon: 'mdi-view-dashboard', to: '/grid-system' },
-        { title: 'GridListPage', icon: 'mdi-view-dashboard', to: '/grid-list-page' },
-        { title: 'BreakPoints', icon: 'mdi-view-dashboard', to: '/break-points' },
-        { title: 'Typography', icon: 'mdi-view-dashboard', to: '/typography' },
+        { title: 'GridSystem', icon: 'mdi-image', to: '/grid-system' },
+        { title: 'GridListPage', icon: 'mdi-image', to: '/grid-list-page' },
+        { title: 'BreakPoints', icon: 'mdi-image', to: '/break-points' },
+        { title: 'Typography', icon: 'mdi-image', to: '/typography' },
+        { title: 'Tables', icon: 'mdi-table-settings', to: '/tables' },
+        { title: 'Forms', icon: 'mdi-form-select', to: '/forms' },
+        { title: 'Buttons', icon: 'mdi-gesture-tap-button', to: '/buttons' },
+        { title: 'Icons', icon: 'mdi-emoticon-excited-outline', to: '/icons' },
       ],
       right: null,
-      drawer: '',
     }
   },
 };
