@@ -13,7 +13,7 @@
           class="pa-3"
           outlined
         >
-          Col
+          Cols
         </v-card>
       </v-col>
     </v-row>
